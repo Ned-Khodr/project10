@@ -1,19 +1,15 @@
+
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,17 +18,366 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+
+.div1 {
+  width: 100%;
+  height: 100px;
+  background-color: aqua;
 }
 
-.App-link {
-  color: #61dafb;
+.div2 ul {
+  text-align: left
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0px;
 }
+
+.div2 {
+  display: block;
+  width: 75%;
+  height: 100px;
+  background-color:mediumorchid;
+  float: left;
+}
+
+.div3 {
+  display: block;
+  width: 25%;
+  height: 100px;
+  background-color:dodgerblue;
+  float: right;
+}
+
+.div3 ul {
+  text-align: left;
+}
+
+.logoNameBlue {
+  color:royalblue;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+}
+
+.logoName {
+  color: black;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+}
+
+.logo {
+  margin-right: 8px;
+  margin-left: 60px;
+}
+
+.logo2 {
+  margin-right: 8px;
+}
+
+.topBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px dotted black;
+  height: 65px;
+}
+
+.logoBase {
+  width: 100%;
+  display: flex;
+  /* border: 2px solid red; */
+  align-items: center;
+}
+
+
+.searchBar {
+  width: 200%;
+  display: flex;
+  /* border: 2px solid blue; */
+  align-items: center;
+  height: 35px;
+}
+
+.searchInput {
+  background-color: whitesmoke;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  width: 360px;
+  margin-right: 3px;
+  padding-left: 15px;
+}
+
+.postList {
+  /* border: 2px solid yellow; */
+  display: block;
+  width: 73%;
+  padding: 0px;
+  margin-right: 10px;
+}
+
+ul.postList {
+  margin: 0 auto;
+  display: block;
+  height: 100px;
+  float: left;
+  /* position: relative; */
+}
+
+.post {
+  /* border: 1px solid black; */
+  margin: 0;
+  /* margin-bottom: 30px; */
+  width: 100%;
+  float: left;
+  padding-right: 15px;
+  padding-bottom: 40px;
+  margin-bottom: -1px;
+}
+
+.postSideBar {
+  /* border: 1px solid green; */
+  width: 45px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  float: left;
+  margin: 20px 10px;
+  margin-right: 18px;
+}
+
+.postSideBar * {
+  margin: 5px;
+}
+
+.postBody {
+  /* border: 1px solid red; */
+  width: calc(100% - 75px);
+  height: 100%;
+  display: block;
+  float: right;
+}
+
+.postTitle {
+  /* border: 1px solid red; */
+  width: 100%;
+  margin: 5px;
+  padding: 8px 0px;
+  text-align: left;
+}
+
+.postImage {
+  /* border: 1px solid violet; */
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: flex-start;
+}
+  
+
+.postInfoBar {
+  /* border: 1px solid gold; */
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.posterNameDiv {
+  /* border: 1px solid blue; */
+  height: 50px;
+  width: 33%;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Align horizontal */
+  align-items: center; /* Align vertical */
+}
+
+
+.postTimeDiv {
+  /* border: 1px solid blue; */
+  height: 50px;
+  width: 33%;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Align horizontal */
+  align-items: center; /* Align vertical */
+}
+
+
+.postCommentsInfo {
+  /* border: 1px solid blue; */
+  height: 50px;
+  width: 34%;
+  display: flex;
+  justify-content: center; /* Align horizontal */
+  align-items: center; /* Align vertical */
+}
+
+.commentList {
+  /* border: 1px solid black; */
+  padding: 0;
+  /* visibility: hidden; */
+  /* height: 0; */
+  margin-top: 12px;
+  display: none;
+}
+
+.comment {
+  /* border: 1px solid black; */
+  width: 100%;
+  /* height: 100px; */
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: azure;
+}
+
+.commentInfoBar {
+  /* border: 1px solid lime; */
+  height: 20%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin-bottom: 12px;
+}
+
+.commentBody {
+  /* border: 1px solid fuchsia; */
+  height: 80%;
+  margin: 0;
+  text-align: left;
+  padding: 5px;
+}
+
+.commentorName {
+  /* border: 1px solid fuchsia; */
+  width: 50%;
+  height: 100%;
+  float: left;
+  margin: 0;
+  color: blue;
+  font-weight: bold;
+  text-align: left;
+}
+
+.commentTime {
+  /* border: 1px solid fuchsia; */
+  width: 50%;
+  height: 100%;
+  float: right;
+  margin: 0;
+  font-style: italic;
+  text-align: right;
+}
+
+.upArrow {
+  height: 20px;
+  width: 20px;
+  margin: 3px auto;
+}
+
+.downArrow {
+  height: 20px;
+  width: 20px;
+  margin: 3px auto;
+}
+
+.postScore {
+  font-weight: bold;
+  color: #b4b4b4;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.commentIcon {
+  height: 35px;
+  width: 35px;
+  margin-right: 5px;
+}
+
+.posterName {
+  color: blue;
+  font-weight: bold;
+}
+
+
+.sideBar {
+  display: block;
+  width: 25%;
+  padding-top: 10px;
+  float: right;
+  /* border: 1px solid black; */
+}
+
+.sideBarTitle {
+  text-align: left;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 5px;
+  margin: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.subredditList {
+  padding: 0;
+  margin: 0;
+}
+
+.subredditButton {
+  border: 1px solid red;
+}
+
+.subreddit {
+  /* border: 1px solid red; */
+  height: 50px;
+  margin: 0;
+  text-align: left;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#subreddit9 {
+  color: blue;
+}
+
+.upArrow {
+  cursor: pointer;
+}
+
+.downArrow {
+  cursor: pointer;
+}
+
+.commentIcon {
+  cursor: pointer;
+}
+
+/* colors
+unclicked: 180,180,180
+up-hover: 44f244
+down-hover: ff8080
+up-clicked: 11b855
+down-clicked: ff0000 
+commemt-icon color: 8c8c8c
+*/
+
